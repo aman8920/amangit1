@@ -1,0 +1,155 @@
+------------table
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table</title>
+        <style>
+            table,td,th{border:blue;border-collapse: collapse;border-style: solid;}
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>GET<sub>s</sub>
+            </caption>
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+            </tr>
+            <tr><td>aman</td> <td>singh</td></tr>
+            <tr><td>roy</td><td>sen</td></tr>
+            <tr><td>bhim</td><td>sen</td></tr>
+            <tr><td>harry</td><td>potter</td></tr>
+        </table>
+        <br>
+
+        <table>
+            <caption>GET<sub>s</sub>
+            </caption>
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+            </tr>
+            <tr><td>aman </td> <td rowspan="3"> singh</td></tr>
+            <tr><td>roy</td></tr>
+            <tr><td>bhim</td></tr></table>
+            <br>
+            <table>
+                <caption>GET<sub>s</sub>
+                </caption>
+                <tr>
+                    <th>firstname</th>
+                    <th>lastname</th>
+                </tr>
+                <tr><td>aman </td> <td> singh</td></tr>
+                <tr><td>roy</td><td>sen</td></tr>
+                <tr><td>bhim</td><td>kumar</td></tr>
+                <tr><td colspan="2">ajay kumar</td></tr>
+            </table><br><br>
+
+            <form action="https://www.w3schools.com/html/html_basic.asp">
+                <label> click to learn html</label>
+                <input type="submit">
+            </form>
+
+            <form action="">
+                <label for="">firstname</label> <input type="text">
+                <label for="">lastname</label> <input type="text">
+                <label for="">gender</label> male<input type="radio">
+                <label for="">skill</label> <input type="checkbox">
+            </form>
+    </body>
+</html>
+
+
+----------form
+
+<html>
+    <head>
+        <title>Day3 html</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Heading</legend>
+        <form action="" method="post">
+            <label>FirstName *</label>
+            <input type="text" name="fn" required autofocus required style="margin-left:15px"><br><br>
+            
+            <label>LastName</label>
+            <input type="text" name="ln" style="margin-left:15px"><br><br>
+            <label>Email</label>
+            <input type="email" name="ln"  placeholder="fname.lname@infinite.com" style="margin-left:15px"><br><br>
+            <label>Date of Birth</label>
+            <input type="date" ><br><br>
+            <input type="submit"><input type="reset" style="margin-left:35px">
+           
+        </form>
+    </fieldset>
+    </body>
+</html>
+
+
+
+-------logins
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <style>.div1{border: darkorchid;border-style: double;}</style>
+    </head>
+    <body style="color: darkcyan; background-color: lightgreen;">
+        <center><h1 style="color: coral;">home page</h1></center>
+       <div class="div1"> already registered   <a href="C:\Users\Training\Desktop\aman\html\htmltable\home\login.html">login</a></div> <br>
+
+    <div class="div1">new user rester <a href="C:\Users\Training\Desktop\aman\html\htmltable\home\register.html">here</a></div>
+    </body>
+
+    
+</html>
+
+-----login page
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+    </head>
+    <body style="background-color: mediumorchid;">
+        <form action="C:\Users\Training\Desktop\aman\html\htmltable\home\logins.html">
+            <fieldset><legend>login details</legend>
+            <label for="">enter username</label> <input required placeholder="name@mail.com" type="text">
+            <label for="">password</label> <input required type="text">
+            <br>
+            <!-- <label for="">login</label> -->
+           <input name="login" type="submit" value="login">
+        </fieldset> </form>
+    </body>
+</html>
+
+---------register page
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new register</title>
+    </head>
+    <body style="background-color: mediumspringgreen;">
+        <fieldset>
+            <legend>register</legend>
+        <form action="C:\Users\Training\Desktop\aman\html\htmltable\home\registers.html" method="post">
+            <label>FirstName *</label>
+            <input type="text" name="fn" required autofocus style="margin-left:15px"><br><br>
+            
+            <label>LastName</label>
+            <input type="text" name="ln" style="margin-left:15px"><br><br>
+            <label>Email</label>
+            <input type="email" name="ln"  placeholder="fname.lname@infinite.com" style="margin-left:15px"><br><br>
+            <label>Date of Birth</label>
+            <input type="date" ><br><br>
+            <input type="submit">
+           
+        </form>
+    </fieldset>
+    </body>
+</html>
