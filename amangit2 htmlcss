@@ -1,0 +1,47 @@
+-------------------------------html---------------------------------------
+<html>
+    <head>
+        <title>
+            hello
+        </title>
+       
+        <link rel="stylesheet" href="hell.css">
+    </head>
+
+    <body>
+        <center><h1>Japan</h1></center>
+        <p>hello </p>
+        <p>where would you like to go</p>
+        <hr><br>
+        <div class="div0">
+            <div class="div1" style="width:300px; height:200px">Tokyo</div>
+            <div class="div1" style="width:300px; height:200px">osakka</div>
+            <div class="div1" style="width:300px; height:200px">okinava</div>
+            <div class="div1" style="width:300px; height:200px">grandline</div>
+        </div>
+
+    </body>
+</html>
+
+---------------------------css----------------------
+body{
+    background-color: rgba(46, 85, 87, 0.541);background-image:url('images.jfif');background-repeat:no-repeat;background-attachment: fixed;background-position: center;background-size:cover;opacity: 1;
+}
+h1{
+    border-style: solid;border-color: blue;border-radius: 3px;border-width: 2px;border-collapse: collapse;border-top-color: coral;border-bottom-color:darkcyan;border-radius: 2px;
+    font-size:50px;font-weight:20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: oblique;font-variant: small-caps;
+    background-color:rgba(23, 35, 201, 0.726);background-size: auto;text-decoration: underline; text-shadow: 0px 0px 4px rgba(250, 10, 200, 0.7);
+}
+.div0{
+    background-color: rgba(91, 50, 112, 0.473);
+    display:inline-flex;
+}
+.div1{
+    background-color:rgba(10, 100, 73, 0.575);border-style: dashed;border-color:darkred;border-radius: 10px;margin-left: 10px;
+    padding: 20px;text-align: center;
+}
+
+p{
+    text-align:left;text-transform: uppercase;text-shadow: 0px 0px 3px rgb(160, 11, 128);
+    font-size:25px;font-family: 'Courier New', Courier, monospace;font-style: italic;
+}
