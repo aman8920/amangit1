@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgba(110, 60, 133, 0.137);"> 
+
+<div class="container mt-3">
+  <div class="jumbotron">
+    <h1>My Web</h1>      
+    <p>we have it all</p>
+  </div>
+  <div class="d-flex justify-content-center p-3 bg-secondary text-white" style="background-color: rgba(177, 55, 79, 0.596);">  
+    <div class="p-2 bg-info  ">Home</div>
+    <div class="p-2 bg-warning">about</div>
+    <div class="p-2 bg-primary ">contacts</div>
+  </div>
+
+
+ <br>
+ <div class="container">
+   <div class="row row-cols-3 ">
+      <div class="col-sm-3  " style="background-color: rgba(31, 35, 104, 0.336);">location1</div>
+      <div class="col-sm-3  " style="background-color: rgba(80, 32, 95, 0.555); ">location2</div>
+      <div class="col-sm-3   " style="background-color: rgba(139, 102, 34, 0.548);">location3</div>
+      <div class="col-sm-3   " style="background-color: rgba(105, 221, 157, 0.377);">location4</div>
+      <div class="col-sm-3   " style="background-color: rgba(185, 82, 87, 0.281);">location5</div>
+    
+    </div>
+  </div>
+  <br>
+  
+   <div style="display: flex; margin-left: 20px;">
+     <div style="border: 3px solid;">
+       <fieldset>
+            <legend>booking details</legend>
+        <form action="" method="post">
+            <label> Name </label>
+            <input type="text" name="fn" required autofocus required style="margin-left:15px"><br><br>
+            <label>Email</label>
+            <input type="email" name="ln"  placeholder="fname.lname@infinite.com" style="margin-left:15px"><br><br>
+            <label>Date of booking </label>
+            <input type="date" ><br><br>
+            <input type="submit"><input type="reset" style="margin-left:35px">
+           
+           </form>
+        </fieldset>
+      </div>
+
+    
+     <div style="border: 3px solid; margin-left: 30px;">
+          <fieldset>
+                <legend>cancelling details</legend>
+             <form action="" method="post">
+                <label> Name </label>
+                <input type="text" name="fn" required autofocus required style="margin-left:15px"><br><br>
+                <label>Email</label>
+                <input type="email" name="ln"  placeholder="fname.lname@infinite.com" style="margin-left:15px"><br><br>
+                <label>Date of booking </label>
+                <input type="date" ><br><br>
+                <input type="submit"><input type="reset" style="margin-left:35px">
+                
+              </form>
+          </fieldset>
+        
+      </div>
+   </div>\
+
+
+      <footer style="background-color: rgb(207, 98, 8);height: 30px;text-align: center;">
+        thanks for visiting aman's magic &copy
+      </footer>
+</div>
+</body>
+</html>
