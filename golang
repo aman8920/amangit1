@@ -1,0 +1,55 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+type booking struct {
+	timeslot time.Time
+	patient  string
+}
+
+type appointments struct {
+	bookings []booking
+}
+
+func (a *appointments) Book(bookingTime time.Time, name string) {
+	if a.bookings == nil {
+		a.bookings = make([]booking, 0)
+	}
+	a.bookings = append(a.bookings, booking{timeslot: bookingTime, patient: name})
+}
+func (a *appointments) Cancel(bookingTime time.Time, name string) {
+	l := len(a.bookings)
+	for i, v := range a.bookings {
+		fmt.Printf("\nTimeSlot %d %d", i, v)
+		a.bookings = append(a.booking[:i], a.booking[i+1:]...)
+	}
+}
+
+func main() {
+	b := new(booking)
+	a := new(appointments)
+	var err error
+	b.patient = "Hari"
+	b.timeslot, err = time.Parse(time.RFC3339, "2021-02-18T09:00:00Z")
+
+	if err != nil {
+		fmt.Printf("Error in parsing : %v", err)
+	}
+	a.Book(b.timeslot, b.patient)
+	fmt.Printf("\nNo of Appointments %d \n", len(a.bookings))
+	for _, v := range a.bookings {
+		fmt.Printf("Timeslot %v", v)
+		fmt.Printf(" Timeslot %v \n", v.timeslot)
+	}
+	// arr := []int{23, 6, 7, 8, 9, 8}
+
+	// arr1 := arr[3:5]
+	// arr = append(arr[:2], arr1...)
+	// for i, v := range arr {
+	// 	fmt.Printf("\nTimeslot %d %d", i, v)
+	// }
+
+}
